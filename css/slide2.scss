@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.slide_two {
+	background-image: url("../img/bg/slide-2.jpg");
+	@extend .slide-position
+}
+
+.container-slide-two {
+	padding-bottom: 150px;
+}
+
+.top {
+	margin-bottom: 100px;
+}
+
+.content-slide-two__title {
+	font-family: 'gagalinregular', sans-serif;
+	font-size: 72px;
+	color: rgb(47, 50, 52);
+	text-align: center;
+	font-weight: 400;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom__item  {
+	text-align: center;
+    width: 32%;
+    justify-content: space-between;
+}
+
+.bottom__imgs {
+	margin-bottom: 35px;
+}
+
+.bottom__pic {
+	width: 100px;
+    height: 100px;
+}
+
+.bottom__title {
+	text-transform: lowercase;
+	font-family: 'lifehackmedium', sans-serif;
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-weight: 400;
+
+
+	&::first-letter {
+		text-transform: uppercase;
+	}
+}
+
+.bottom__description {
+	font-family: 'ubuntulight', sans-serif;
+	font-size: 14px;
+	line-height: 1.8em;
+}

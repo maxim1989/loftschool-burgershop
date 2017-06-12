@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.nav-item-congig {
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	border-color: #fff;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.slide-position {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.title-config {
+	font-size: 72px;
+    font-family: 'gagalinregular';
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.person-name {
+	font-size: 14px;
+    font-family: 'gagalinregular';
+    color: #fff;
+    position: relative;
+    margin-left: 20px;
+}

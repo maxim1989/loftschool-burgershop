@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+.slide_eight {
+	background-color: grey;
+	@extend .slide-position;
+	position: relative;
+}
+
+.yandex-map {
+	width: 100%;
+	height: calc(100% - 59px);
+}
+
+.slide-8__footer {
+	background-color: #0f0f0f;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.slide-8__left {
+	float: left;
+	position: relative;
+}
+
+.slide-8__address {
+	color: #fff;
+	font-family: 'ubuntulight', sans-serif;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	font-size: 14px;
+}
+
+.slide-8__phone {
+	color: #e45028;
+	font-family: 'ubuntubold', sans-serif;
+	font-size: 14px;
+	margin-bottom: 7px;
+	margin-left: 20px;
+	display: block;
+	position: relative;
+
+	&:before {
+		content: "";
+		display: block;
+		background-image: url("../img/icons/slide-8-phone.svg");
+		position: absolute;
+		width: 11px;
+		height: 11px;
+		top: 3px;
+    	left: -20px;
+	}
+}
+
+.slide-8__right {
+	float: right;
+    width: 15%;
+    margin-top: 20px;
+}
+
+.soc {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.soc__fb_pic,.soc__fb_pic\:regular {
+	background-image:url('../img/icons/icons.svg');
+	background-position:0 0;
+	background-repeat:no-repeat;
+	opacity: .5;
+	&:hover {
+		opacity: 1;
+	}
+}
+.soc__fb {
+	width:20px;
+	height:20px;
+	display: block;
+}
+
+.soc__ins_pic,.soc__ins_pic\:regular {
+	background-image:url('../img/icons/icons.svg');
+	background-position:0 -20px;
+	background-repeat:no-repeat;
+	opacity: .5;
+	&:hover {
+		opacity: 1;
+	}
+}
+.soc__ins{
+	width:20px;
+	height:20px;
+	display: block;
+}
+
+.soc__tw_pic,.soc__tw_pic\:regular {
+	background-image:url('../img/icons/icons.svg');
+	background-position:0 -40px;
+	background-repeat:no-repeat;
+	opacity: .5;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.soc__tw {
+	width:20px;
+	height:20px;
+	display: block;
+}
+
+.soc__vk_pic,.soc__vk_pic\:regular {
+	background-image:url('../img/icons/icons.svg');
+	background-position:0 -60px;
+	background-repeat:no-repeat;
+	opacity: .5;
+	&:hover {
+		opacity: 1;
+	}
+}
+.soc__vk{
+	width:20px;
+	height:11px;
+	display: block;
+}

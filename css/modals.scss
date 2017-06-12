@@ -1,0 +1,99 @@
+.modal-bg {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 7;
+	background-color: #2f3234;
+	opacity: .7;
+	top: 0;
+    left: 0;
+    display: none;
+}
+
+.modal-person {
+	width: 460px;
+	height: 254px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 8;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.modal-person__header {
+    margin-bottom: 30px;
+	@extend %clearfix;
+}
+
+.modal-person__left {
+	float: left;
+	font-family: 'gagalinregular', sans-serif;
+	font-size: 14px;
+}
+
+.modal-person__right {
+	float: right;
+	background-image: url("../img/icons/modal-close.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 15px;
+	height: 15px;
+	display: block;
+}
+
+.modal-person__content {
+	overflow-x: auto;
+    overflow-y: scroll;
+    height: 165px;
+
+}
+
+.modal-order {
+	width: 197px;
+	height: 106px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 8;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: none;
+}
+
+.modal-order__text {
+	font-family: 'ubuntulight', sans-serif;
+	font-size: 14px;
+	text-transform: lowercase;
+	&::first-letter {
+		text-transform: uppercase;
+	}
+	margin-bottom: 18px;
+}
+
+.model-order__close {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 18px;
+	padding-right: 18px;
+	text-transform: uppercase;
+	background-color: #e45028;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 13px;
+	font-family: 'ubuntumedium', sans-serif;
+}

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.slide_five {
+	background-image: url("../img/bg/slide-5.jpg");
+	@extend .slide-position;
+}
+
+.slide-5-title {
+	position: absolute;
+	top: 180px;
+	left: 100px;
+	color: #fff;
+	font-size: 72px;
+    font-family: 'gagalinregular', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.slide-5-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+}
+
+.slide-5-menu__item {
+	@extend %clearfix;
+}
+
+.slide-5-menu__link {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    float: left;
+    width: 80px;
+    position: relative;
+}
+
+.slide-5-menu__link_meat {
+	background-image: url('../img/content/slide-5-meat.jpg');
+}
+
+.slide-5-menu__link_veg {
+	background-image: url('../img/content/slide-5-vegeterian.jpg');
+}
+
+.slide-5-menu__link_light {
+	background-image: url('../img/content/slide-5-light.jpg');
+}
+
+.slide-5-menu__text {
+	display: block;
+	font-size: 40px;
+	color: #fff;
+	font-family: 'gagalinregular', sans-serif;
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateY(-50%);
+    top: 50%;
+    position: relative;
+    width: 80px;
+    left: 30px;
+    white-space: nowrap;
+    float: left;
+    position: absolute;
+    width: 650px;
+    left: -255px;
+    white-space: nowrap;
+    z-index: 5;
+    text-align: center;
+}
+
+.adjust-width {
+    width: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background-color: rgb(47, 50, 52);
+    opacity: 0.929;
+    float: left;
+    transition: .3s;
+}
+
+.adjust-width_active {
+    width: 540px;
+}
+
+.slide-5-menu__content {
+	width: 540px;
+  	padding: 60px 30px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'ubuntulight', sans-serif;
+}

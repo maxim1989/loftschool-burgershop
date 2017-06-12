@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.slide_one {
+	background-image: url("../img/bg/slide-1.jpg");
+	@extend .slide-position;
+}
+
+.slide-1-header__content {
+	padding-top: 13px;
+	display: flex-inline;
+	display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+	color: #fff;
+	font-size: 0;
+	display: flex;
+    align-items: center;
+}
+
+.navigation__menu {
+	margin-right: 15px;
+    display: flex;
+}
+
+.navigation__item {
+	margin-right: 15px;
+	display: flex;
+    align-items: center;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+	    background-color: #fff;
+    	margin-left: 15px;
+
+	}
+}
+
+.navigation__item:last-child {
+	margin-right: 0;
+	&:after {
+		display: none;
+	}
+}
+
+.navigation__btn:hover {
+    background: #c1401e;
+}
+
+.navigation__link {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: "ubuntumedium", sans-serif;
+	display: inline-block;
+}
+
+.navigation__link_6 {
+	background-color: #e45028;
+	padding: 8px 16px;
+	border-radius: 5px;
+}
+
+
+.slide-1__container {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-1__burger {
+	width: 596px;
+    height: 424px;
+    position: relative;
+    text-align: center;
+}
+
+.slide-1__burger_pic {
+	display: inline-block;
+    margin-left: 5px;
+    width: 417px;
+    height: 424px;
+}
+
+.drops {
+    background-image: url(../img/icons/slide-1-drops.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 67px;
+    right: 5px;
+    width: 453px;
+    height: 241px;
+}
+
+.slide-1__description {
+	padding-left: 5px;
+	margin-top: 55px;
+}
+
+.slide-1__title {
+	color: #f9b43b;
+	font-weight: 400;
+    @extend .title-config
+}
+
+.slide-1__paragraph {
+	font-size: 65px;
+    color: #fff;
+    font-family: 'lifehackmedium', sans-serif;
+    text-transform: lowercase;
+    line-height: 1em;
+}
+
+.scroll {
+	position: absolute;
+	text-align: center;
+	bottom: 60px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.scroll-down {
+	display: inline-block;
+	transition: .3s;
+	transform: translateY(50%);
+	&:hover {
+		transform: scale(1.1, 1.2);
+	};
+}
